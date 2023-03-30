@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SNAP_RPC="https://bitsong-rpc.lavenderfive.com:443"
-SNAP_RPC2="https://rpc-bitsong-ia.cosmosia.notional.ventures:443"
+SNAP_RPC="https://rpc.explorebitsong.com:443"
+SNAP_RPC2="https://rpc-bitsong.itastakers.com:443"
 HUBDIR="/mnt/BitSongDERO/.bitsongd"
 
 
@@ -18,5 +18,5 @@ cp $HUBDIR/data/priv_validator_state.json $HUBDIR/priv_validator_state.json.back
 
 rm -rf $HUBDIR/data
 mkdir $HUBDIR/data
-cp $HUBDIR/priv_validator_state.json.backup $HUBDIR/dataa/priv_validator_state.json
+cp $HUBDIR/priv_validator_state.json.backup $HUBDIR/data/priv_validator_state.json
 
